@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Socket">
+      <UniqueIdentifier>{39927381-7732-4dbd-bdd1-4c096f6ed5cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket\Interface">
+      <UniqueIdentifier>{d0263188-fe27-485e-8cb1-b625e9ea9918}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Interface\SocketInterface.cpp">
+      <Filter>Socket\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Interface\TcpServer.cpp">
+      <Filter>Socket\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Interface\TcpSocket.cpp">
+      <Filter>Socket\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CommonSocket.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinServer.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinSocket.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Interface\SocketInterface.hpp">
+      <Filter>Socket\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Interface\TcpServer.hpp">
+      <Filter>Socket\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Interface\TcpSocket.hpp">
+      <Filter>Socket\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CommonSocket.hpp">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinServer.hpp">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinSocket.hpp">
+      <Filter>Socket</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

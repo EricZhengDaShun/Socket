@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Socket">
+      <UniqueIdentifier>{bd877ba7-23a2-4b04-8588-22d5bd636b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket\Interface">
+      <UniqueIdentifier>{5f3fe41a-f973-4e8a-9efd-b9a9c7679515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket\Base64">
+      <UniqueIdentifier>{506fd045-90e2-4f9c-8f25-7dedd9b89faf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket\Sha1">
+      <UniqueIdentifier>{762cad9c-e488-4506-93f4-228ebf7a1e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket\SSL">
+      <UniqueIdentifier>{d1846753-1736-4ee7-aa02-9230dba68f33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket\WebSocket">
+      <UniqueIdentifier>{9a1924d9-9318-4d0d-a1e6-da3d2aca8247}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CommonServer.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CommonSocket.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinSocket.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Base64\Base64Decoder.cpp">
+      <Filter>Socket\Base64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Base64\Base64Encoder.cpp">
+      <Filter>Socket\Base64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Base64\Base64Processor.cpp">
+      <Filter>Socket\Base64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Interface\ServerInterface.cpp">
+      <Filter>Socket\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Interface\SocketInterface.cpp">
+      <Filter>Socket\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Interface\SocketTask.cpp">
+      <Filter>Socket\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Interface\TcpServer.cpp">
+      <Filter>Socket\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Interface\TcpSocket.cpp">
+      <Filter>Socket\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WebSocket\FrameData.cpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WebSocket\FrameParser.cpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WebSocket\Opcode.cpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WebSocket\PayloadLength.cpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WebSocket\WebSocketMask.cpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SSL\SslCtxResource.cpp">
+      <Filter>Socket\SSL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SSL\SslResource.cpp">
+      <Filter>Socket\SSL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SSL\SslServer.cpp">
+      <Filter>Socket\SSL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SSL\SslSocketServerSide.cpp">
+      <Filter>Socket\SSL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Sha1\DataShiftOperator.cpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Sha1\DataStuffer.cpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Sha1\LogicFunctionExecutor.cpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Sha1\MethodOne.cpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Sha1\MethodTwo.cpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Sha1\Sha1.cpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Sha1\ShaAlgorithm.cpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Sha1\Utility.cpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinServer.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WebSocket\WebSocketServerSide.cpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Interface\WebSocketServerSideProcess.cpp">
+      <Filter>Socket\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WebSocket\WebSocketServer.cpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WebSocket\WebSocketServerSsl.cpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\CommonServer.hpp">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CommonSocket.hpp">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinSocket.hpp">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Base64\Base64Decoder.hpp">
+      <Filter>Socket\Base64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Base64\Base64Define.hpp">
+      <Filter>Socket\Base64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Base64\Base64Encoder.hpp">
+      <Filter>Socket\Base64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Base64\Base64Processor.hpp">
+      <Filter>Socket\Base64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Interface\SocketInterface.hpp">
+      <Filter>Socket\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Interface\SocketTask.hpp">
+      <Filter>Socket\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Interface\TcpSocket.hpp">
+      <Filter>Socket\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WebSocket\FrameData.hpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WebSocket\FrameParser.hpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WebSocket\Opcode.hpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WebSocket\PayloadLength.hpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WebSocket\WebSocketMask.hpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSL\SslCtxResource.hpp">
+      <Filter>Socket\SSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSL\SslResource.hpp">
+      <Filter>Socket\SSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSL\SslServer.hpp">
+      <Filter>Socket\SSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSL\SslSocketServerSide.hpp">
+      <Filter>Socket\SSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Sha1\DataShiftOperator.hpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Sha1\DataStuffer.hpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Sha1\LogicFunctionExecutor.hpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Sha1\MethodOne.hpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Sha1\MethodTwo.hpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Sha1\Sha1.hpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Sha1\ShaAlgorithm.hpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Sha1\TypeDefine.hpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Sha1\Utility.hpp">
+      <Filter>Socket\Sha1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinServer.hpp">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WebSocket\WebSocketServerSide.hpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Interface\WebSocketServerSideProcess.hpp">
+      <Filter>Socket\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WebSocket\WebSocketServer.hpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WebSocket\WebSocketClinetSsl.hpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WebSocket\WebSocketServerSsl.hpp">
+      <Filter>Socket\WebSocket</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

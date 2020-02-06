@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{50051C9B-2CF7-4280-BDB8-A4B0DC90BDC4}</ProjectGuid>
+    <RootNamespace>WebSocketClient</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(OPENSSL_HOME)/include/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(OPENSSL_HOME)/lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(OPENSSL_HOME)/include/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalLibraryDirectories>$(OPENSSL_HOME)/lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Base64\Base64Decoder.cpp" />
+    <ClCompile Include="..\src\Base64\Base64Encoder.cpp" />
+    <ClCompile Include="..\src\Base64\Base64Processor.cpp" />
+    <ClCompile Include="..\src\CommonSocket.cpp" />
+    <ClCompile Include="..\src\Interface\SocketInterface.cpp" />
+    <ClCompile Include="..\src\Interface\TcpSocket.cpp" />
+    <ClCompile Include="..\src\Interface\WebSocketClientProcess.cpp" />
+    <ClCompile Include="..\src\Sha1\DataShiftOperator.cpp" />
+    <ClCompile Include="..\src\Sha1\DataStuffer.cpp" />
+    <ClCompile Include="..\src\Sha1\LogicFunctionExecutor.cpp" />
+    <ClCompile Include="..\src\Sha1\MethodOne.cpp" />
+    <ClCompile Include="..\src\Sha1\MethodTwo.cpp" />
+    <ClCompile Include="..\src\Sha1\Sha1.cpp" />
+    <ClCompile Include="..\src\Sha1\ShaAlgorithm.cpp" />
+    <ClCompile Include="..\src\Sha1\Utility.cpp" />
+    <ClCompile Include="..\src\SSL\SslCtxResource.cpp" />
+    <ClCompile Include="..\src\SSL\SslResource.cpp" />
+    <ClCompile Include="..\src\SSL\SslSocketClientSide.cpp" />
+    <ClCompile Include="..\src\WebSocket\FrameData.cpp" />
+    <ClCompile Include="..\src\WebSocket\FrameParser.cpp" />
+    <ClCompile Include="..\src\WebSocket\Opcode.cpp" />
+    <ClCompile Include="..\src\WebSocket\PayloadLength.cpp" />
+    <ClCompile Include="..\src\WebSocket\WebSocketClient.cpp" />
+    <ClCompile Include="..\src\WebSocket\WebSocketClientSsl.cpp" />
+    <ClCompile Include="..\src\WebSocket\WebSocketMask.cpp" />
+    <ClCompile Include="..\src\WinSocket.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Base64\Base64Decoder.hpp" />
+    <ClInclude Include="..\include\Base64\Base64Define.hpp" />
+    <ClInclude Include="..\include\Base64\Base64Encoder.hpp" />
+    <ClInclude Include="..\include\Base64\Base64Processor.hpp" />
+    <ClInclude Include="..\include\CommonSocket.hpp" />
+    <ClInclude Include="..\include\Interface\SocketInterface.hpp" />
+    <ClInclude Include="..\include\Interface\TcpSocket.hpp" />
+    <ClInclude Include="..\include\Interface\WebSocketClientProcess.hpp" />
+    <ClInclude Include="..\include\Sha1\DataShiftOperator.hpp" />
+    <ClInclude Include="..\include\Sha1\DataStuffer.hpp" />
+    <ClInclude Include="..\include\Sha1\LogicFunctionExecutor.hpp" />
+    <ClInclude Include="..\include\Sha1\MethodOne.hpp" />
+    <ClInclude Include="..\include\Sha1\MethodTwo.hpp" />
+    <ClInclude Include="..\include\Sha1\Sha1.hpp" />
+    <ClInclude Include="..\include\Sha1\ShaAlgorithm.hpp" />
+    <ClInclude Include="..\include\Sha1\TypeDefine.hpp" />
+    <ClInclude Include="..\include\Sha1\Utility.hpp" />
+    <ClInclude Include="..\include\SSL\SslCtxResource.hpp" />
+    <ClInclude Include="..\include\SSL\SslResource.hpp" />
+    <ClInclude Include="..\include\SSL\SslSocketClientSide.hpp" />
+    <ClInclude Include="..\include\WebSocket\FrameData.hpp" />
+    <ClInclude Include="..\include\WebSocket\FrameParser.hpp" />
+    <ClInclude Include="..\include\WebSocket\Opcode.hpp" />
+    <ClInclude Include="..\include\WebSocket\PayloadLength.hpp" />
+    <ClInclude Include="..\include\WebSocket\WebSocketClinet.hpp" />
+    <ClInclude Include="..\include\WebSocket\WebSocketClinetSsl.hpp" />
+    <ClInclude Include="..\include\WebSocket\WebSocketMask.hpp" />
+    <ClInclude Include="..\include\WinSocket.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

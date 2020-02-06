@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Socket">
+      <UniqueIdentifier>{6b5c17fd-e76e-4478-a3b4-d6e32682f3f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket\Interface">
+      <UniqueIdentifier>{3c697db2-915d-4ee7-999e-1fbfd9bc26fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket\SSL">
+      <UniqueIdentifier>{a679411e-2dfc-4cf6-9aa4-24b09ac405ab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Interface\ServerInterface.cpp">
+      <Filter>Socket\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Interface\SocketInterface.cpp">
+      <Filter>Socket\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Interface\SocketTask.cpp">
+      <Filter>Socket\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Interface\TcpServer.cpp">
+      <Filter>Socket\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Interface\TcpSocket.cpp">
+      <Filter>Socket\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CommonServer.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CommonSocket.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ServerTaskLinker.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SocketTaskManager.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinServer.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinSocket.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SSL\SslCtxResource.cpp">
+      <Filter>Socket\SSL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SSL\SslResource.cpp">
+      <Filter>Socket\SSL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SSL\SslSocketClientSide.cpp">
+      <Filter>Socket\SSL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Interface\ServerInterface.hpp">
+      <Filter>Socket\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Interface\SocketInterface.hpp">
+      <Filter>Socket\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Interface\SocketTask.hpp">
+      <Filter>Socket\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Interface\TcpServer.hpp">
+      <Filter>Socket\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Interface\TcpSocket.hpp">
+      <Filter>Socket\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CommonServer.hpp">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CommonSocket.hpp">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ServerTaskLinker.hpp">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SocketTaskManager.hpp">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinServer.hpp">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinSocket.hpp">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSL\SslCtxResource.hpp">
+      <Filter>Socket\SSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSL\SslResource.hpp">
+      <Filter>Socket\SSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSL\SslSocketClientSide.hpp">
+      <Filter>Socket\SSL</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
