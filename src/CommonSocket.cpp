@@ -4,7 +4,7 @@
 #ifdef _MSC_VER
 #include "WinSocket.hpp"
 
-CommonSocket::CommonSocket()
+CommonSocket::CommonSocket() noexcept
     : tcpSocket(std::make_unique<WinSocket>())
 {
 
@@ -59,7 +59,7 @@ CommonSocket::CommonSocket(CommonSocket&& rhv) noexcept
     (*this) = std::move(rhv);
 }
 
-CommonSocket::CommonSocket(std::unique_ptr<TcpSocket>& rhv)
+CommonSocket::CommonSocket(std::unique_ptr<TcpSocket>& rhv) noexcept
     : CommonSocket()
 {
     if (rhv.get() == nullptr) return;
